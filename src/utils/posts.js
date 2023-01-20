@@ -1,26 +1,47 @@
-const express = require("express");
-const fs = require("fs");
+const fs = require("fs/promises");
 const path = require("path");
 const MarkdownIt = require("markdown-it");
 const md = new MarkdownIt({ html: true });
 
 async function readerPosts() {
-  await fs.readdir(path.join("src/posts"))
+  return await fs
+    .readdir(path.join("src/storage/posts"))
     .then(async (files) => {
       const data = [];
-
       for await (const file of files) {
-        const text = await fs.readFile(path.join("src/posts", file), "utf-8");
+        const text = await fs.readFile(
+          path.join("src/storage/posts", file),
+          "utf-8"
+        );
         const header = Extra(text);
         data.push(header);
       }
       if (data.length === 0) {
-        return console.log("No Posts");
+        return "NOT_POSTS";
       }
       return data;
     })
     .catch((err) => {
       console.log(err);
+    });
+}
+async function readerPost(filename) {
+  return await fs
+    .readFile(path.join("src/storage/posts", `${filename}.md`))
+    .then((data) => {
+      try {
+        const dataHTML = md.render(
+          data.toString().replace(/-{3}([\w\s:"',{}/.-])*-{3}/gm, "")
+        );
+        return dataHTML;
+      } catch (err) {
+        console.log(err);
+        return "NOT_POST";
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+      return "NOT_POST";
     });
 }
 
@@ -46,5 +67,4 @@ function Extra(fileText) {
   });
   return abs;
 }
-
-module.exports = { readerPosts };
+module.exports = { readerPosts, readerPost };

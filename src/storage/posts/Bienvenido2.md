@@ -1,5 +1,5 @@
 ---
-id:Bienvenido
+id:Bienvenido2
 title:Bienvenido a la web de itscience
 image:/images/logo.webp
 description:bienvenida a la web esto es una prueba para verificar el funcionamiento de lo que vale la pena
