@@ -7,7 +7,7 @@ const cors = require("cors");
 app.use(cors());
 
 app.set("port", process.env.PORT || 3000);
-app.use(express.static(path.join(__dirname, "/storage")));
+app.use(express.static(path.join(__dirname, "/storage/images")));
 
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));

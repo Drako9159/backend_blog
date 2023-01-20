@@ -1,14 +1,14 @@
 ---
-id:Bienvenido2
-title:Bienvenido a la web de itscience
-image:/images/logo.webp
-description:bienvenida a la web esto es una prueba para verificar el funcionamiento de lo que vale la pena
+id:post01
+title:Alura challenge
+image:/post01.jpg
+description:Breve description del bootcamp de alur
 createdAt:15/1/2023
-author:Fulanito de Tal
+author:Antonio Jaramillo
 ---
 
 
-# Bienvenido a la web de itscience
+# Hablando del challenge
 ![logo itscience](/images/logo1b.svg)
 
 

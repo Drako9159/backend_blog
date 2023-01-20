@@ -8,6 +8,7 @@ async function getPosts(req, res) {
     res.status(500).send({ message: "ERROR_GET_POSTS" });
   }
 }
+
 async function getPost(req, res) {
   try {
     res.json({ data: await readerPost(req.params.id) });
