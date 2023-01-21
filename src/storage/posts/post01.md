@@ -2,7 +2,7 @@
 id:post01
 language:spanish
 title:Alura challenge
-image:/post01.jpg
+image:/post01.png
 description:Sobre el challenge de Alura
 createdAt:December 27th, 2022 - 15 min read
 author:Antonio Jaramillo
