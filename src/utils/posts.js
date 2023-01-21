@@ -5,12 +5,12 @@ const md = new MarkdownIt({ html: true });
 
 async function readerPosts() {
   return await fs
-    .readdir(path.join("src/storage/posts"))
+    .readdir(path.join(`src/storage/posts`))
     .then(async (files) => {
       const data = [];
       for await (const file of files) {
         const text = await fs.readFile(
-          path.join("src/storage/posts", file),
+          path.join(`src/storage/posts`, file),
           "utf-8"
         );
         const header = Extra(text);
@@ -27,7 +27,7 @@ async function readerPosts() {
 }
 async function readerPost(filename) {
   return await fs
-    .readFile(path.join("src/storage/posts", `${filename}.md`))
+    .readFile(path.join(`src/storage/posts`, `${filename}.md`))
     .then((data) => {
       try {
         const dataHTML = md.render(

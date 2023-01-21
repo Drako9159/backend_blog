@@ -1,9 +1,10 @@
 ---
 id:post02
+language:english
 title:Alura challenge
-image:/images/logo.webp
-description:Breve description del bootcamp de alur
-createdAt:15/1/2023
+image:/post02.jpg
+description:Sobre el challenge de Alura
+createdAt:December 27th, 2022 - 15 min read
 author:Antonio Jaramillo
 ---
 
