@@ -10,7 +10,7 @@ createdAt:December 27th, 2022 - 15 min read
 author:Antonio Jaramillo Jaramillo
 ---
 # Primer Challenge de Alura
-![logo oracle + alura](https://backendblog.fly.dev/post01.png)
+![logo oracle + alura](https://backendblog.fly.dev/post02.jpg)
 
 En diciembre del 2022 comenzó la segunda edición el bootcamp de [Alura](https://app.aluracursos.com), que es ofrecido en conjunto con la empresa [Oracle](www.oracle.com), este curso pretende formar desarolladores utilizando herramientas de desarrollo web y permite que los participantes decidan su nivel de formación así como la posibilidad de elegir el área en la que pretenden desempeñarse, Backend o Frontend.
 
@@ -27,30 +27,31 @@ El challenge tiene una duración de 4 semanas, consiste en crear una aplicación
 
 Las "llaves" de encriptación of ofrecidas por el challenge son las siguientes:
 
-- La letra "e" es convertida para "enter"
-- La letra "i" es convertida para "imes"
-- La letra "a" es convertida para "ai"
-- La letra "o" es convertida para "ober"
-- La letra "u" es convertida para "ufat"
+> La letra "e" es convertida para "enter"
+> La letra "i" es convertida para "imes"
+> La letra "a" es convertida para "ai"
+> La letra "o" es convertida para "ober"
+> La letra "u" es convertida para "ufat"
 
 
 ### Requisitos:
+
 - Debe funcionar solo con letras minúsculas
 - No deben ser utilizados letras con acentos ni caracteres especiales
 - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
 
 Por ejemplo:
-"gato" => "gaitober"
-gaitober" => "gato"
+>"gato" => "gaitober"
+> gaitober" => "gato"
 
 La página debe tener campos para
 inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
 El resultado debe ser mostrado en la pantalla.
 
 Extras:
-- Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+> Un botón que copie el texto encriptado/desencriptado para la > sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
 
-#### ¿Cómo de completó?
+#### ¿Cómo se completó?
 Este reto resultó muy sencillo de realizar, aplica los principales temas impartidos en las primeras semanas del curso, como lo son el uso de funciones, condicionales, ciclos, arreglos y objetos, además de la utilización de la consola del navegador para realizar pruebas.
 
 En javascript aplique la siguiente función para realizar la encriptación:
