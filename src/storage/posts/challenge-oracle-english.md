@@ -1,60 +1,60 @@
 ---
-id:03
-filename:challenge-oracle-spanish
+id:04
+filename:challenge-oracle-english
 language:english
 color:green
-title:Primer Challenge de Alura
+title:First Alura Challenge
 image:/post02.jpg
 description:Sobre el challenge de Alura
 createdAt:December 27th, 2022 - 15 min read
 author:Antonio Jaramillo Jaramillo
 ---
-# Primer Challenge de Alura
+# First Alura Challenge
 ![logo oracle + alura](https://backendblog.fly.dev/post02.jpg)
 
-En diciembre del 2022 comenzó la segunda edición el bootcamp de [Alura](https://app.aluracursos.com), que es ofrecido en conjunto con la empresa [Oracle](www.oracle.com), este curso pretende formar desarolladores utilizando herramientas de desarrollo web y permite que los participantes decidan su nivel de formación así como la posibilidad de elegir el área en la que pretenden desempeñarse, Backend o Frontend.
+In December 2022, the second edition of the bootcamp of [Alura](https://app.aluracursos.com), offered jointly with the company [Oracle](www.oracle.com), this course aims to train developers using web development tools and allows participants to decide their level of training, as well as the possibility to choose the area in which they intend to work, Backend or Frontend.
 
-La formación frontend te lleva de la mano a través de los fundamentos de React, el framework más popular para el desarrollo web, y te enseña a crear aplicaciones web modernas y escalables. En el curso de backend, aprenderás a crear aplicaciones web con Java, el lenguaje más popular para el desarrollo backend.
+The frontend training takes you through the basics of React, the most popular framework for web development, and teaches you how to create modern, scalable web applications. In the backend course, you will learn how to create web applications with Java, the most popular language for backend development.
 
-## ¿Qué es el challenge?
-El challenge es un reto que se propone a los participantes del bootcamp para crear una aplicación web, con ello se busca que los participantes pongan en práctica los conocimientos adquiridos durante el curso, el para esta edición se tiene como primero challenge la creación de un encriptador.
+## What is the challenge?
+The challenge is a challenge that is proposed to the participants of the bootcamp to create a web application, with this it is sought that the participants put into practice the knowledge acquired during the course, the for this edition has as first challenge the creation of an encryptor.
 
-## ¿Qué es un encriptador?
-Un encriptador es una aplicación web que permite encriptar y desencriptar mensajes, para ello se utiliza un algoritmo de encriptación, todos los detalles de este primer challenge se pueden consultar en [Challenge One](https://www.aluracursos.com/challenges/challenge-one-logica/sprint01-construye-un-encriptador-texto-con-javascript).
+## What is an encryptor?
+A cipher is a web application that allows you to encrypt and decrypt messages, using an encryption algorithm, all the details of this first challenge can be found at [Challenge One](https://www.aluracursos.com/challenges/challenge-one-logica/sprint01-construye-un-encriptador-texto-con-javascript).
 
-## ¿Cómo se realiza el challenge?
-El challenge tiene una duración de 4 semanas, consiste en crear una aplicación para encriptar textos, la idea es poder intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
+## How is the challenge carried out?
+The challenge lasts 4 weeks and consists of creating an application to encrypt texts, the idea is to be able to exchange secret messages with other people who know the secret of the encryption used.
 
-Las "llaves" de encriptación of ofrecidas por el challenge son las siguientes:
+The encryption "keys" offered by the challenge are as follows:
 
-> La letra "e" es convertida para "enter"
-> La letra "i" es convertida para "imes"
-> La letra "a" es convertida para "ai"
-> La letra "o" es convertida para "ober"
-> La letra "u" es convertida para "ufat"
+> The letter "e" is converted to "enter"
+> The letter "i" is converted to "imes"
+> The letter "a" is converted to "ai"
+> The letter "o" is converted to "ober"
+> The letter "u" is converted to "ufat"
 
 
-### Requisitos:
+### Requirements:
 
-- Debe funcionar solo con letras minúsculas
-- No deben ser utilizados letras con acentos ni caracteres especiales
-- Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
+- You must work only with lowercase letters
+- No letters with accents or special characters should be used.
+- It must be possible to convert a word for the encrypted version and also return an encrypted word for its original version.
 
-Por ejemplo:
->"gato" => "gaitober"
+For example:
+> "gato" => "gaitober"
 > gaitober" => "gato"
 
-La página debe tener campos para
-inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
-El resultado debe ser mostrado en la pantalla.
+The page must have fields for
+insertion of the text to be encrypted or decrypted, and the user must be able to choose between the two options.
+The result must be displayed on the screen.
 
 Extras:
-> Un botón que copie el texto encriptado/desencriptado para la > sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+> A button that copies encrypted/decrypted text for the transfer section, i.e. it has the same functionality as ctrl+C or the "copy" option in the application menu.
 
-#### ¿Cómo se completó?
-Este reto resultó muy sencillo de realizar, aplica los principales temas impartidos en las primeras semanas del curso, como lo son el uso de funciones, condicionales, ciclos, arreglos y objetos, además de la utilización de la consola del navegador para realizar pruebas.
+#### How was it completed?
+This challenge was very easy to complete, it applies the main topics taught in the first weeks of the course, such as the use of functions, conditionals, cycles, arrays and objects, as well as the use of the browser console for testing.
 
-En javascript aplique la siguiente función para realizar la encriptación:
+In javascript apply the following function to perform the encryption:
 
 ```javascript
 function encrypt(letter) {
@@ -69,10 +69,9 @@ function encrypt(letter) {
   return letter;
 }
 ```
-Esta se encarga de reemplazar las letras por las palabras que se encuentran en el objeto values, si la letra no se encuentra en el objeto se retorna la misma letra.
+It replaces the letters with the words found in the values object, if the letter is not found in the object, the same letter is returned.
 
-Para realizar la desencriptación se utilizó la siguiente función:
-
+The following function was used to perform the decryption:
 
 
 ```javascript
@@ -92,9 +91,9 @@ function decrypt(letter) {
   return check;
 }
 ```
-Esta función se encarga de buscar las palabras que se encuentran en el objeto exp y las reemplaza por las letras que se encuentran en el objeto values, si la palabra no se encuentra en el objeto se retorna la misma palabra.
+This function is in charge of looking for the words found in the exp object and replaces them with the letters found in the values object, if the word is not found in the object the same word is returned.
 
-El api del navegador nos ofrece algunas opciones de copiado sencillas de implementar, para ello se utilizó la siguiente función:
+The browser api offers us some copy options easy to implement, for this we use the following function:
 
 ```javascript
 copyText.addEventListener("click", async (e) => {
@@ -109,7 +108,7 @@ copyText.addEventListener("click", async (e) => {
 });
 ```
 
-Es una buena practica dar feedback al usuario cuando se realiza una acción, para ello se utilizó la siguiente función:
+It is a good practice to give feedback to the user when an action is performed, for this purpose the following function was used:
 
 ```javascript
 function toast(message, color) {
@@ -123,7 +122,7 @@ function toast(message, color) {
   }, 3000);
 }
 ```
-Por último, las validaciones se realizaron con expresiones regulares, para ello se utilizó la siguiente función:
+Finally, validations were performed with regular expressions, using the following function:
 
 ```javascript
 function validations(check) {
@@ -138,4 +137,4 @@ function validations(check) {
 }
 ```
 
-Con todo esto y siguiendo un diseño de la página ofrecida, obtuve este resultado, muy sencillo desplegado en gihub pages: [Encrypter](https://drako9159.github.io/encryptorByDrako/)
+With all this and following a design of the offered page, I obtained this result, very easy to show in the gihub pages: [Encrypter](https://drako9159.github.io/encryptorByDrako/)

@@ -1,12 +1,12 @@
 ---
-id:04
+id:03
 filename:challenge-oracle-spanish
 language:spanish
 color:green
 title:Primer Challenge de Alura
 image:/post02.jpg
-description:Sobre el challenge de Alura
-createdAt:December 27th, 2022 - 15 min read
+description:About chanllenge by ALura
+createdAt:Diciembre 27th, 2022 - 15 min lectura
 author:Antonio Jaramillo Jaramillo
 ---
 # Primer Challenge de Alura
@@ -41,7 +41,7 @@ Las "llaves" de encriptación of ofrecidas por el challenge son las siguientes:
 - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
 
 Por ejemplo:
-> "gato" => "gaitober"
+>"gato" => "gaitober"
 > gaitober" => "gato"
 
 La página debe tener campos para
@@ -49,7 +49,7 @@ inserción del texto que será encriptado o desencriptado, y el usuario debe pod
 El resultado debe ser mostrado en la pantalla.
 
 Extras:
-> Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+> Un botón que copie el texto encriptado/desencriptado para la > sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
 
 #### ¿Cómo se completó?
 Este reto resultó muy sencillo de realizar, aplica los principales temas impartidos en las primeras semanas del curso, como lo son el uso de funciones, condicionales, ciclos, arreglos y objetos, además de la utilización de la consola del navegador para realizar pruebas.
