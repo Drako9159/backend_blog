@@ -1,5 +1,6 @@
 ---
 id:03
+type:education
 filename:challenge-oracle-spanish
 language:spanish
 color:green

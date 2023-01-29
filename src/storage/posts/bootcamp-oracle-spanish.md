@@ -1,5 +1,6 @@
 ---
 id:02
+type:education
 filename:bootcamp-oracle-spanish
 language:spanish
 color:yellow

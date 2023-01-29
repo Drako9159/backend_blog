@@ -1,5 +1,6 @@
 ---
 id:01
+type:education
 filename:bootcamp-oracle-english
 language:english
 color:yellow
@@ -11,7 +12,7 @@ author:Antonio Jaramillo Jaramillo
 ---
 
 # Bootcamp Oracle Next Education
-![logo oracle + alura](https://backendblog.fly.dev/post01.png)
+![logo oracle + alura](../images/post01.png)
 
 ## What is Oracle Next Education?
 It is presented as one of Oracle's initiatives that seeks to train developers, for which it has partnered with Alura to offer a training course in which participants can choose between two areas of development, Backend or Frontend.

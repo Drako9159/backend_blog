@@ -3,7 +3,6 @@ const path = require("path");
 /*
 const MarkdownIt = require("markdown-it");
 
-
 //const jsx = require("markdown-it-jsx");
 const md = new MarkdownIt({ html: false });
 const parser = new MarkdownIt({
@@ -48,7 +47,8 @@ async function readerPost(filename) {
     .then((data) => {
       try {
         const dataHTML = md.render(
-          data.toString().replace(/-{3}([\w\s:"',{}/.-])*-{3}/gm, "")
+          //Solvent error posts on acent with add à-ü
+          data.toString().replace(/-{3}([à-ü\w\s:"',{}/.-])*-{3}/gm, "")
         );
         return dataHTML;
       } catch (err) {
@@ -63,7 +63,9 @@ async function readerPost(filename) {
 }
 
 function Extra(fileText) {
-  const headers = /(?<=-{3})([\w\s:"',{}/.-])*(?=-{3})/gm;
+  //Change this header for add accents
+  //const headers = /(?<=-{3})([\w\s:"',{}/.-])*(?=-{3})/gm;
+  const headers = /(?=-{3})([à-ü\w\s:"',{}/.-])*(?=-{3})/gm;
   let data;
   try {
     data = headers.exec(fileText.trim());
