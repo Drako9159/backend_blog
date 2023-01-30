@@ -15,8 +15,8 @@ const parser = new MarkdownIt({
 });
 */
 const md = require("markdown-it")();
-const jsx = require("markdown-it-jsx")
-md.use(jsx)
+const jsx = require("markdown-it-jsx");
+md.use(jsx);
 //md.use(jsx)
 
 async function readerPosts() {
@@ -24,12 +24,15 @@ async function readerPosts() {
     .readdir(path.join(`src/storage/posts`))
     .then(async (files) => {
       const data = [];
+
       for await (const file of files) {
         const text = await fs.readFile(
           path.join(`src/storage/posts`, file),
           "utf-8"
         );
+
         const header = Extra(text);
+        // const headerV2 = Extrav2(text);
         data.push(header);
       }
       if (data.length === 0) {
@@ -61,10 +64,41 @@ async function readerPost(filename) {
       return "NOT_POST";
     });
 }
-
+/*
+function Extrav2(fileText) {
+  const headers = /(?=-{3})([à-ü\w\s:"',{}/.-])*(?=-{3})/gm;
+  let data;
+  try {
+    data = headers.exec(fileText.trim());
+  } catch (e) {
+    throw new Error("Invalid header or not found");
+  }
+  const parse = data[0].trim();
+  const dataFilter = parse.split("\n").filter(Boolean);
+  const abs = {};
+  dataFilter.forEach((line) => {
+    
+    const [key, value, more] = line.split(":")
+    
+    if(more){
+      abs[key] = value + ":" + more
+      return abs[key]
+    }
+    abs[key] = value
+    
+    return abs[key]
+    
+    
+  })
+  console.log(abs)
+  
+  
+}
+*/
 function Extra(fileText) {
   //Change this header for add accents
   //const headers = /(?<=-{3})([\w\s:"',{}/.-])*(?=-{3})/gm;
+
   const headers = /(?=-{3})([à-ü\w\s:"',{}/.-])*(?=-{3})/gm;
   let data;
   try {
@@ -74,16 +108,21 @@ function Extra(fileText) {
   }
   const parse = data[0].trim();
   const dataFilter = parse.split("\n").filter(Boolean);
+  // console.log(dataFilter)
+
   const abs = {};
   dataFilter.forEach((line) => {
     const [key, value, more] = line.split(":");
+
     if (more) {
       abs[key] = value + ":" + more;
       return abs[key];
     }
     abs[key] = value;
+    
     return abs[key];
   });
+
   return abs;
 }
 module.exports = { readerPosts, readerPost };

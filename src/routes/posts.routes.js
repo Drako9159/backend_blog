@@ -1,18 +1,23 @@
 const { Router } = require("express");
+const { authMiddleware } = require("../middleware/session")
+
 const router = Router();
 const {
   getPosts,
   getPost,
   getPostsSpanish,
   getPostsEnglish,
+  
 } = require("../controllers/posts.controller");
 
-router.get("/", getPosts);
 
-router.get("/spanish", getPostsSpanish);
+router.get("/posts", getPosts);
 
-router.get("/english", getPostsEnglish);
+router.get("/posts/spanish", authMiddleware, getPostsSpanish);
 
-router.get("/:id", getPost);
+router.get("/posts/english", getPostsEnglish);
+
+router.get("/posts/:id", getPost);
+
 
 module.exports = router;
