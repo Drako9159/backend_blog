@@ -10,12 +10,11 @@ const {
   
 } = require("../controllers/posts.controller");
 
-
-router.get("/posts", getPosts);
-
 router.get("/posts/spanish", authMiddleware, getPostsSpanish);
 
-router.get("/posts/english", getPostsEnglish);
+router.get("/posts/english", authMiddleware, getPostsEnglish);
+
+router.get("/posts", getPosts);
 
 router.get("/posts/:id", getPost);
 

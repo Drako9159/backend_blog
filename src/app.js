@@ -4,18 +4,20 @@ const app = express();
 const path = require("path");
 const morgan = require("morgan");
 
-
 const cors = require("cors");
-app.use(cors(/*{
+/*{
   origin: "https://www.drako.icu"
-}*/));
-
-
+}*/
+app.use(
+  cors({
+    origin: ["https://www.drako.icu", "http://localhost:5000", "http://192.168.1.207:5000"],
+    exposedHeaders: ["authorization"],
+    credentials: true
+  })
+);
 
 app.set("port", process.env.PORT || 3000);
 //for serve images
-
-
 
 app.use(express.static(path.join(__dirname, "/storage/images")));
 
@@ -31,10 +33,6 @@ app.use((req, res, next) => {
   res.status(404).send("404 Not Found");
 });
 
-
 // Configure cors options
-
-
-
 
 module.exports = app;

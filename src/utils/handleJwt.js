@@ -5,6 +5,7 @@ const JWT_SECRET = "drakolin";
 const KEY_EMAIL = "drako9159@gmail.com";
 
 function tokenSign(user, rol) {
+    
   //comprobate mail
   /*
   if(user === KEY_EMAIL) {

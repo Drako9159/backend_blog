@@ -1,5 +1,6 @@
 const { readerPosts, readerPost } = require("../utils/posts");
 
+
 async function getPosts(req, res) {
   try {
     res.json({ data: await readerPosts() });
@@ -44,5 +45,7 @@ async function getPost(req, res) {
     res.status(400).send({ message: "ERROR_GET_POST" });
   }
 }
+
+
 
 module.exports = { getPosts, getPost, getPostsSpanish, getPostsEnglish };
