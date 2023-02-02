@@ -1,8 +1,6 @@
 const { handleError } = require("../utils/handleError");
 const { tokenSign } = require("../utils/handleJwt");
 
-const KEY = process.env.KEY | "drako9159@gmail.com";
-
 async function loginController(req, res) {
   try {
     //receive user:correo, rol:type user

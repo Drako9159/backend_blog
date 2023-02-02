@@ -5,12 +5,11 @@ const path = require("path");
 const morgan = require("morgan");
 
 const cors = require("cors");
-/*{
-  origin: "https://www.drako.icu"
-}*/
+console.log(process.env.DOMINIO)
+
 app.use(
   cors({
-    origin: ["https://www.drako.icu", "http://localhost:5000", "http://192.168.1.207:5000"],
+    origin: [process.env.DOMINIO, "http://localhost:5000", "http://192.168.1.207:5000"],
     exposedHeaders: ["authorization"],
     credentials: true
   })

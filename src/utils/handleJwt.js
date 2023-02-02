@@ -1,20 +1,11 @@
 const jwt = require("jsonwebtoken");
-const JWT_SECRET = "drakolin";
-
-
-const KEY_EMAIL = "drako9159@gmail.com";
+const JWT_SECRET = process.env.JWT_SECRET;
+const USER_KEY = process.env.USER_KEY;
 
 function tokenSign(user, rol) {
-    
-  //comprobate mail
-  /*
-  if(user === KEY_EMAIL) {
-    console.log("es el email")
-  } else {
-    console.log("no es el email")
-  }*/
-  if (user !== KEY_EMAIL) return "NOT_AUTHORIZATION";
-  if (user === KEY_EMAIL) return getToken(user, rol);
+  
+  if (user !== USER_KEY) return "NOT_AUTHORIZATION";
+  if (user === USER_KEY) return getToken(user, rol);
 }
 
 function getToken(user, rol) {
