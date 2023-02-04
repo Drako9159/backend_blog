@@ -1,13 +1,15 @@
 ---
 id:03
-type:education
+category:education
+tag:javascript
 filename:challenge-oracle-spanish
 language:spanish
 color:green
 title:Primer Challenge de Alura
 image:/post02.jpg
 description:About chanllenge by ALura
-createdAt:Diciembre 27th, 2022 - 15 min lectura
+createdAt:Diciembre 27th, 2022
+readTime:15 min read
 author:Antonio Jaramillo Jaramillo
 ---
 # Primer Challenge de Alura

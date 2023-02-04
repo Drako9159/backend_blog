@@ -1,13 +1,15 @@
 ---
 id:05
-type:education
+category:education
+tag:javascript
 filename:ux-google-spanish
 language:spanish
 color:orange
 title:Google UX Caso de estudio
 image:/post03.png
 description:Acerca de Google UX
-createdAt:Enero 14th, 2023 - 5 min read
+createdAt:Enero 14th, 2023
+readTime:15 min read
 author:Antonio Jaramillo Jaramillo
 ---
 

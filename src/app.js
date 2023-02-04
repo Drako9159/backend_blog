@@ -3,9 +3,12 @@ require("dotenv").config();
 const app = express();
 const path = require("path");
 const morgan = require("morgan");
+//For add apicache
+//const apicache = require("apicache")
+//let cache = apicache.middleware;
+//app.use(cache("5 minutes"))
 
 const cors = require("cors");
-console.log(process.env.DOMINIO)
 
 app.use(
   cors({
@@ -27,6 +30,7 @@ app.use(express.json());
 app.use("/api", require("./routes"));
 app.use("/api", require("./routes/posts.routes"));
 app.use("/api", require("./routes/auth.routes"));
+app.use("/api/v2", require("./routes/articles.routes"));
 
 app.use((req, res, next) => {
   res.status(404).send("404 Not Found");

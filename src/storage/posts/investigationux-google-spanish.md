@@ -1,13 +1,15 @@
 ---
 id:06
-type:education
+category:education
+tag:javascript
 filename:investigationux-google-spanish
 language:spanish
 color:purple
 title:Investigación UX Google
 image:/post04.png
 description:Acerca de Google UX
-createdAt:Enero 14th, 2023 - 5 min read
+createdAt:Enero 14th, 2023
+readTime:5 min lectura
 author:Antonio Jaramillo Jaramillo
 ---
 

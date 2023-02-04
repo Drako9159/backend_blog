@@ -19,6 +19,7 @@ async function loginController(req, res) {
       .header("Acess-Control-Allow-Origin", "*")
       .header("Acess-Control-Allow-Credentials", true)
       .header("authorization", data.token)
+      .header("Content-Type", "application/json; charset=utf-8")
       //for only send specific credentials
       //.header("access-control-expose-headers", "authorization")
 

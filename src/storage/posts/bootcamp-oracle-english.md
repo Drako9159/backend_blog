@@ -1,13 +1,15 @@
 ---
 id:01
-type:education
+category:education
+tag:javascript
 filename:bootcamp-oracle-english
 language:english
 color:yellow
 title:Bootcamp Oracle Next Education
 image:/post01.png
 description:About challenge of Alura
-createdAt:December 27th, 2022 - 15 min read
+createdAt:December 27th, 2022
+readTime:15 min read
 author:Antonio Jaramillo Jaramillo
 ---
 
