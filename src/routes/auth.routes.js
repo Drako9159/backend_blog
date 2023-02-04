@@ -4,5 +4,6 @@ const router = Router();
 
 router.post("/login", loginController);
 
+router.post("/v2/login", loginController);
 
 module.exports = router

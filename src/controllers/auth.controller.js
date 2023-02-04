@@ -12,14 +12,15 @@ async function loginController(req, res) {
       res
         .status(403)
         .header("authorization", data.token)
-        .json({ error: data.token });
+        .send({ error: data.token });
       return;
     }
     res
       .header("Acess-Control-Allow-Origin", "*")
       .header("Acess-Control-Allow-Credentials", true)
-      .header("authorization", data.token)
       .header("Content-Type", "application/json; charset=utf-8")
+      .header("authorization", data.token)
+      
       //for only send specific credentials
       //.header("access-control-expose-headers", "authorization")
 
@@ -37,7 +38,7 @@ async function loginController(req, res) {
         "Origin, X-Requested-With, Content-Type, Accept"
       )*/
       //.header("x-auth-token", "lolin")
-      .json({ token: data.token });
+      .send({ token: data.token });
   } catch (error) {
     handleError(res, "ERROR_LOGIN_USER", 403);
   }

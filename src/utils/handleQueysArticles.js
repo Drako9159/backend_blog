@@ -17,7 +17,7 @@ async function queryAll() {
 }
 async function queryOneArticle(id) {
   let data = await readerContentArticle(id);
-  console.log(data)
+
   return data;
 }
 

@@ -1,26 +1,31 @@
 {
   "name": "backend_blog",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.5.0",
+  "description": "server blog",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Drako9159/backend_blog"
+  },
   "keywords": [],
-  "author": "",
+  "author": "antonio.jar.dev@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "markdown-it": "^13.0.1",
-    "markdown-it-jsx": "^1.1.0",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.20",
-    "uuid": "^9.0.0"
+    "bcrypt": "5.1.0",
+    "cors": "2.8.5",
+    "dotenv": "16.0.3",
+    "express": "4.18.2",
+    "markdown-it": "13.0.1",
+    "markdown-it-jsx": "1.1.0",
+    "morgan": "1.10.0",
+    "nodemon": "2.0.20",
+    "uuid": "9.0.0"
   },
   "devDependencies": {
     "jsonwebtoken": "^9.0.0"

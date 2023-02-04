@@ -32,6 +32,7 @@ async function getOneArticle(req, res) {
 }
 
 async function getArticles(req, res) {
+
   try {
     const { sort, language, category, tag, limit, offset } = req.query;
     let data = await queryAll();
@@ -57,7 +58,6 @@ async function getArticles(req, res) {
     if (limit && limit < 10) {
       data = querySliceLimit(limit);
     }
-
     res
       .header("Content-Type", "application/json; charset=utf-8")
       .status(200)
