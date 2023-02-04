@@ -6,7 +6,7 @@ filename:investigationux-google-english
 language:english
 color:purple
 title:Google UX Research
-image:/post04.png
+image:/post04.webp
 description:About Google UX
 createdAt:January 14th, 2023
 readTime:5 min read
@@ -15,7 +15,7 @@ author:Antonio Jaramillo Jaramillo
 
 # Google UX Research
 
-![logo ux](https://backendblog.fly.dev/post04.png)
+![logo ux](https://backendblog.fly.dev/post04.webp)
 
 After reviewing the basics of user experience design and understanding the design process from ideation, comes the user experience research process. In this process we seek to understand the context of the users, their needs and problems, for this we conduct interviews, surveys and observations.
 
@@ -58,7 +58,7 @@ Interviews are one of the most used techniques in UX research, the interviews ar
 Observations determine users' behaviors, recording what they do, what they say and what they think. Our ability to interpret these aspects may be limited; it is necessary to contrast the data obtained from observations with those obtained from interviews. During this process, it is important to identify some biases that could affect our research process.
 
 
-![img-only-intermediate](https://backendblog.fly.dev/post04-01.png)
+![img-only-intermediate](https://backendblog.fly.dev/post04-01.webp)
 
 ### Research results
 

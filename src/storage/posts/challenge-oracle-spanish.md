@@ -6,14 +6,14 @@ filename:challenge-oracle-spanish
 language:spanish
 color:green
 title:Primer Challenge de Alura
-image:/post02.jpg
+image:/post02.webp
 description:About chanllenge by ALura
 createdAt:Diciembre 27th, 2022
 readTime:15 min lectura
 author:Antonio Jaramillo Jaramillo
 ---
 # Primer Challenge de Alura
-![logo oracle + alura](https://backendblog.fly.dev/post02.jpg)
+![logo oracle + alura](https://backendblog.fly.dev/post02.webp)
 
 En diciembre del 2022 comenzó la segunda edición el bootcamp de [Alura](https://app.aluracursos.com), que es ofrecido en conjunto con la empresa [Oracle](www.oracle.com), este curso pretende formar desarolladores utilizando herramientas de desarrollo web y permite que los participantes decidan su nivel de formación así como la posibilidad de elegir el área en la que pretenden desempeñarse, Backend o Frontend.
 

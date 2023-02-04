@@ -25,7 +25,7 @@ app.use(
 app.set("port", process.env.PORT || 3000);
 //for serve images
 
-app.use(express.static(path.join(__dirname, "/storage/images")));
+app.use(express.static(path.join(__dirname, "/storage/images/webp")));
 
 app.use(morgan("dev"));
 //app.use(express.urlencoded({ extended: false }));

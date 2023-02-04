@@ -6,7 +6,7 @@ filename:investigationux-google-spanish
 language:spanish
 color:purple
 title:Investigación UX Google
-image:/post04.png
+image:/post04.webp
 description:Acerca de Google UX
 createdAt:Enero 14th, 2023
 readTime:5 min lectura
@@ -15,7 +15,7 @@ author:Antonio Jaramillo Jaramillo
 
 # Investigación UX Google
 
-![logo ux](https://backendblog.fly.dev/post04.png)
+![logo ux](https://backendblog.fly.dev/post04.webp)
 
 Luego de pasar de los aspectos básicos del diseño de la experiencia de usuario y de comprender el proceso de diseño a partir de la ideación, viene un proceso de investigación de experiencia de usuario. En este proceso se busca comprender el contexto de los usuarios, sus necesidades y sus problemas, para esto se realizan entrevistas, encuestas y observaciones.
 
@@ -58,7 +58,7 @@ Las entrevistas son una de las técnicas más utilizadas en la investigación de
 Las observaciones determinan los comportamientos de los usuarios, se registra lo que hacen los usuarios, lo que dicen y lo que piensan. Nuestra capacidad para interpretar estos aspectos puede ser limitada, es necesario comprobar los datos obtenidos de las observaciones con los datos obtenidos de las entrevistas. Durante este proceso, es importante identificar algunos sesgos que podrían afectar nuestro proceso de investigación.
 
 
-![img-only-intermediate](https://backendblog.fly.dev/post04-01.png)
+![img-only-intermediate](https://backendblog.fly.dev/post04-01.webp)
 
 ### Resultados de la investigación
 

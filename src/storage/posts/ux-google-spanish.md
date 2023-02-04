@@ -6,7 +6,7 @@ filename:ux-google-spanish
 language:spanish
 color:orange
 title:Google UX Caso de estudio
-image:/post03.png
+image:/post03.webp
 description:Acerca de Google UX
 createdAt:Enero 14th, 2023
 readTime:15 min lectura
@@ -15,7 +15,7 @@ author:Antonio Jaramillo Jaramillo
 
 # Google UX Caso de estudio
 
-![logo ux](https://backendblog.fly.dev/post03.png)
+![logo ux](https://backendblog.fly.dev/post03.webp)
 
 ## ¿Qué es Google UX?
 
@@ -46,7 +46,7 @@ Una de las ventajas de este curso es que se realizan proyectos prácticos, esto 
 7. Diseñar una experiencia de usuario de una iniciativa de interés público y prepararse para el trabajo
 
 
-![img-only-intermediate](https://backendblog.fly.dev/post03-01.png)
+![img-only-intermediate](https://backendblog.fly.dev/post03-01.webp)
 
 ### Opinión personal
 
