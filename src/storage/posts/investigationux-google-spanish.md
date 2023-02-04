@@ -1,5 +1,5 @@
 ---
-id:06
+id:03-spanish
 category:education
 tag:javascript
 filename:investigationux-google-spanish
@@ -68,6 +68,6 @@ Interpretar los resultados de investigación es el aspecto más importante en es
 
 Es importante compartir los resultados de la investigación con los equipos de desarrollo, diseño y marketing, para que puedan tomar decisiones basadas en los resultados de la investigación. 
 
-> Esta parte del curso es la más interesate antes de los diseños de alta fidelidad, con esto se provee de confianza al diseñador al mismo tiempo que mejora sus diseños.
+> Esta parte del curso es la más interesante antes de los diseños de alta fidelidad, con esto se provee de confianza al diseñador al mismo tiempo que mejora sus diseños.
 
 

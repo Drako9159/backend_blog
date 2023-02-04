@@ -1,5 +1,5 @@
 ---
-id:05
+id:04-spanish
 category:education
 tag:javascript
 filename:ux-google-spanish
@@ -9,7 +9,7 @@ title:Google UX Caso de estudio
 image:/post03.png
 description:Acerca de Google UX
 createdAt:Enero 14th, 2023
-readTime:15 min read
+readTime:15 min lectura
 author:Antonio Jaramillo Jaramillo
 ---
 
@@ -27,9 +27,9 @@ El programa te permite obtener un certificado profesional de UX, el cual te perm
 
 ### Proyectos Prácticos
 
-Una de las ventajas de este curso es que se realizan proyectos prácticos, esto te lleva a simentar las habilidades que se han aprendiendo en el curso, los proyectos son 3 y cada uno cuenta con un proceso de inverstigación, diseño, desarrollo y presentación. Estos proyectos son individuales y se utilizan las principales herramientas de diseño de UX como Figma y Adbobe XD.
+Una de las ventajas de este curso es que se realizan proyectos prácticos, esto te lleva a cimentar las habilidades que se han aprendiendo en el curso, los proyectos son 3 y cada uno cuenta con un proceso de investigación, diseño, desarrollo y presentación. Estos proyectos son individuales y se utilizan las principales herramientas de diseño de UX como Figma y Adbobe XD
 
-### El cusro completo es divido en 7 partes que contemplan cada una un proceso del diseño de experiencia de usuario:
+### El curso completo es divido en 7 partes que contemplan cada una un proceso del diseño de experiencia de usuario:
 
 1. Aspectos básicos del diseño de la experiencia del usuario
 
@@ -50,8 +50,8 @@ Una de las ventajas de este curso es que se realizan proyectos prácticos, esto 
 
 ### Opinión personal
 
-El curso me pareció muy interesante y mantiene una ruta de aprendizaje adecuada, logra el objetivo de proporcinar  los conocimientos necesarios para desarrollar aplicaciones que cumplan con los estándares de UX, el curso es muy completo. 
-Quizá demasiado completo, es decir, hay algunos temas que se repitén de un caso práctico a otro y el hecho de llevar un diseño en Figma para después pasar a Adobe, pudiera ser poco eficiente. Los diseños en pantallas de distintas resoluciones se reducen a tamaños para mobiles y desktops, lo cual no es muy realista, ya que en la vida real se encuentran dispositivos con resoluciones intermedias.
+El curso me pareció muy interesante y mantiene una ruta de aprendizaje adecuada, logra el objetivo de proporcionar  los conocimientos necesarios para desarrollar aplicaciones que cumplan con los estándares de UX, el curso es muy completo. 
+Quizá demasiado completo, es decir, hay algunos temas que se repiten de un caso práctico a otro y el hecho de llevar un diseño en Figma para después pasar a Adobe, pudiera ser poco eficiente. Los diseños en pantallas de distintas resoluciones se reducen a tamaños para mobiles y desktops, lo cual no es muy realista, ya que en la vida real se encuentran dispositivos con resoluciones intermedias.
 
 > He usado Figma desde hace tiempo y me parece excelente para el diseño de aplicaciones, pero cuando se trata de algo simple, siempre paso directo al desarrollo de estilos con CSS o cualquier framework relacionado al diseño.
 
