@@ -9,18 +9,14 @@ async function loginController(req, res) {
       token: tokenSign(user, rol),
     };
     if (data.token === "NOT_AUTHORIZATION") {
-      res
-        .status(403)
-        .header("authorization", data.token)
-        .send({ error: data.token });
-      return;
+      handleError(res, data.token, 403)
     }
     res
       .header("Acess-Control-Allow-Origin", "*")
       .header("Acess-Control-Allow-Credentials", true)
       .header("Content-Type", "application/json; charset=utf-8")
       .header("authorization", data.token)
-      
+      .send({ token: data.token });
       //for only send specific credentials
       //.header("access-control-expose-headers", "authorization")
 
@@ -38,7 +34,7 @@ async function loginController(req, res) {
         "Origin, X-Requested-With, Content-Type, Accept"
       )*/
       //.header("x-auth-token", "lolin")
-      .send({ token: data.token });
+      
   } catch (error) {
     handleError(res, "ERROR_LOGIN_USER", 403);
   }

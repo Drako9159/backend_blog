@@ -9,6 +9,8 @@ const {
   queryOneArticle,
 } = require("../utils/handleQueysArticles");
 
+const { handleError } = require("../utils/handleError");
+
 async function getOneArticle(req, res) {
   try {
     const findArticle = await queryOneArticle(req.params.id);
@@ -23,16 +25,11 @@ async function getOneArticle(req, res) {
         .send({ data: findArticle });
     }
   } catch (error) {
-    console.log(error);
-    res
-      .header("Content-Type", "application/json; charset=utf-8")
-      .status(400)
-      .send({ message: "ERROR_GET_POST" });
+    handleError(res, "ERROR_GET_POST", 400);
   }
 }
 
 async function getArticles(req, res) {
-
   try {
     const { sort, language, category, tag, limit, offset } = req.query;
     let data = await queryAll();
@@ -63,15 +60,11 @@ async function getArticles(req, res) {
       .status(200)
       .send({ data: data });
   } catch (error) {
-    res
-      .header("Content-Type", "application/json; charset=utf-8")
-      .status(500)
-      .send({ message: "ERROR_GET_POSTS" });
+    handleError(res, "ERROR_GET_POSTS", 500);
   }
 }
 
 module.exports = {
   getArticles,
   getOneArticle,
- 
 };
