@@ -1,19 +1,9 @@
-const {
-  querySortByData,
-  queryFilterByCategory,
-  queryFilterByTag,
-  queryFilterByLanguage,
-  querySliceLimit,
-  querySliceOffsetLimit,
-  queryAll,
-  queryOneArticle,
-} = require("../utils/handleQueysArticles");
-
 const { handleError } = require("../utils/handleError");
+const QuerysArticles = require("../utils/handleQueysArticles");
 
 async function getOneArticle(req, res) {
   try {
-    const findArticle = await queryOneArticle(req.params.id);
+    const findArticle = await QuerysArticles.queryOneArticle(req.params.id);
     if (findArticle === "NOT_POST") {
       res
         .header("Content-Type", "application/json; charset=utf-8")
@@ -32,29 +22,34 @@ async function getOneArticle(req, res) {
 async function getArticles(req, res) {
   try {
     const { sort, language, category, tag, limit, offset } = req.query;
-    let data = await queryAll();
+    let data = await QuerysArticles.readerFiles();
     //first order and then filter
-    //sort only for date
+    //sort available for date
     if (sort) {
-      data = await querySortByData(sort);
+      data = await QuerysArticles.querySortByData(data, sort);
     }
+    //filter for language article
     if (language) {
-      data = await queryFilterByLanguage(language);
+      data = await QuerysArticles.queryFilterByLanguage(data, language);
     }
+    //filter by category
     if (category) {
-      data = await queryFilterByCategory(category);
+      data = await QuerysArticles.queryFilterByCategory(data, category);
     }
+    //filter by tag
     if (tag) {
-      data = await queryFilterByTag(tag);
-    }
-
-    if (offset && limit) {
-      data = await querySliceOffsetLimit(offset, limit);
+      data = await QuerysArticles.queryFilterByTag(data, tag);
     }
     //standard limit 20 but this 10 for best eficient in server
-    if (limit && limit < 10) {
-      data = querySliceLimit(limit);
+    if (offset && limit <= 10) {
+      data = await QuerysArticles.querySliceOffsetLimit(data, offset, limit);
     }
+    //this send only first 10 items
+    if (limit <= 10) {
+      data = await QuerysArticles.querySliceLimit(data, limit);
+    }
+    //limiter default
+    data = await QuerysArticles.querySliceLimit(data, 10);
     res
       .header("Content-Type", "application/json; charset=utf-8")
       .status(200)
