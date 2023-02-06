@@ -3,12 +3,14 @@ require("dotenv").config();
 const app = express();
 const path = require("path");
 const morgan = require("morgan");
+const { authMiddleware } = require("./middleware/session");
 //For add apicache
 //const apicache = require("apicache")
 //let cache = apicache.middleware;
 //app.use(cache("5 minutes"))
 
 const cors = require("cors");
+//app.use(authMiddleware);
 
 app.use(
   cors({
@@ -25,7 +27,11 @@ app.use(
 app.set("port", process.env.PORT || 3000);
 //for serve images
 
-app.use(express.static(path.join(__dirname, "/storage/images/webp")));
+app.use(
+  "/api/v2/articles/images/",
+  authMiddleware,
+  express.static(path.join(__dirname, "/storage/images/webp"))
+);
 
 app.use(morgan("dev"));
 //app.use(express.urlencoded({ extended: false }));
@@ -35,6 +41,7 @@ app.use("/api", require("./routes"));
 app.use("/api", require("./routes/posts.routes"));
 app.use("/api", require("./routes/auth.routes"));
 app.use("/api/v2", require("./routes/articles.routes"));
+app.use("/api/v2", require("./routes/movies.routes"));
 
 app.use((req, res, next) => {
   res

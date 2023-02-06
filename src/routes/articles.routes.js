@@ -7,6 +7,8 @@ const {
   getOneArticle,
 } = require("../controllers/articles.controller");
 
+
+
 router.get("/articles", authMiddleware, getArticles);
 
 router.get("/articles/:id", authMiddleware, getOneArticle);
