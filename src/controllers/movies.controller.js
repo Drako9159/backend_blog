@@ -6,6 +6,7 @@ const json_movies = fs.readFileSync(`${DB_PATH}/movies.json`, "utf-8");
 async function dbReader() {
   return (movies = JSON.parse(json_movies));
 }
+
 async function dbWriter(db) {
   fs.writeFileSync(
     `${DB_PATH}/movies.json`,
@@ -15,10 +16,16 @@ async function dbWriter(db) {
 }
 
 async function uploadMovie(req, res) {
-  const tes = { name: "antonio" };
-
+  const { title, age, gender, synopsis, stars } = req.body;
+  let data = {
+    title: title,
+    age: age,
+    gender: gender,
+    synopsis: synopsis,
+    stars: stars,
+  };
   //console.log(movies);
-    dbWriter(tes)
+  dbWriter({ data: data });
   res.send({ message: "ok" });
 }
 

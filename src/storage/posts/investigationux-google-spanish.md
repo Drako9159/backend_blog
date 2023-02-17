@@ -15,7 +15,7 @@ author:Antonio Jaramillo Jaramillo
 
 # Investigación UX Google
 
-![logo ux](https://backendblog.fly.dev/api/v2/articles/images/post04.webp)
+![logo ux](https://backendblog.fly.dev/api/v2/images/articles/post04.webp)
 
 Luego de pasar de los aspectos básicos del diseño de la experiencia de usuario y de comprender el proceso de diseño a partir de la ideación, viene un proceso de investigación de experiencia de usuario. En este proceso se busca comprender el contexto de los usuarios, sus necesidades y sus problemas, para esto se realizan entrevistas, encuestas y observaciones.
 
@@ -58,7 +58,7 @@ Las entrevistas son una de las técnicas más utilizadas en la investigación de
 Las observaciones determinan los comportamientos de los usuarios, se registra lo que hacen los usuarios, lo que dicen y lo que piensan. Nuestra capacidad para interpretar estos aspectos puede ser limitada, es necesario comprobar los datos obtenidos de las observaciones con los datos obtenidos de las entrevistas. Durante este proceso, es importante identificar algunos sesgos que podrían afectar nuestro proceso de investigación.
 
 
-![img-only-intermediate](https://backendblog.fly.dev/api/v2/articles/images/post04-01.webp)
+![img-only-intermediate](https://backendblog.fly.dev/api/v2/images/articles/post04-01.webp)
 
 ### Resultados de la investigación
 
