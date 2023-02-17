@@ -13,7 +13,7 @@ readTime:15 min lectura
 author:Antonio Jaramillo Jaramillo
 ---
 # Primer Challenge de Alura
-![logo oracle + alura](https://backendblog.fly.dev/api/v2/images/articles/post02.webp)
+![logo oracle + alura](https://backendblog.fly.dev/api/v2/images/artilces/post02.webp)
 
 En diciembre del 2022 comenzó la segunda edición el bootcamp de [Alura](https://app.aluracursos.com), que es ofrecido en conjunto con la empresa [Oracle](www.oracle.com), este curso pretende formar desarolladores utilizando herramientas de desarrollo web y permite que los participantes decidan su nivel de formación así como la posibilidad de elegir el área en la que pretenden desempeñarse, Backend o Frontend.
 
