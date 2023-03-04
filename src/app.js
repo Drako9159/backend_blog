@@ -24,10 +24,14 @@ app.use(
 
 app.set("port", process.env.PORT || 3000);
 //for serve images
-
 app.use(
   "/api/v2/images/articles",
   express.static(path.join(__dirname, "/storage/images/articles/webp"))
+);
+// for serve gifs
+app.use(
+  "/api/v2/images/articles",
+  express.static(path.join(__dirname, "/storage/images/articles/gifs"))
 );
 app.use(morgan("dev"));
 //app.use(express.urlencoded({ extended: false }));
